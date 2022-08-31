@@ -12,28 +12,22 @@ destroyBtnRef.addEventListener('click', destroyBoxes)
 
 let amount = 0;
 
-const handleClick = (event) => {
-  // console.log(event.currentTarget.value);
-  amount = parseInt(event.currentTarget.value);
-
-  console.dir(amount);
-  console.log(typeof (amount));
-}
-
-amountRef.addEventListener('input', handleClick)
-
-const boxTable = [];
 
 function createBoxes(amount) {
-  console.log(amount);
+  amount = amountRef.value;
+  const boxTable = [];
   for (let i = 0; i < amount; i++) {
-    const boxElement = `<div style="backgroun-color: ${getRandomHexColor()}; height: 30 + ${i * 10}; weight: 30 + ${i * 10} px"></div>`;
-    boxTable.push(boxElement)
+    const boxElement = `<div style="background-color: ${getRandomHexColor()}; height: ${30 + i * 10 + 'px'}; width: ${30 + i * 10 + 'px'}"></div>`;
+
+    console.log(boxElement);
+    boxTable.push(boxElement);
+
+    //document.createElement
   }
+  console.log(boxTable);
+  boxesRef.innerHTML = boxTable.join('');
 }
 
-function destroyBoxes(){
-  boxTable.splice(boxTable.length);
+function destroyBoxes(boxTable) {
+  boxesRef.innerHTML = "";
 }
-
-boxesRef.innerHTML = boxTable.join('');

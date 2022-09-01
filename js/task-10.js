@@ -10,7 +10,7 @@ const boxesRef = document.querySelector('#boxes');
 createBtnRef.addEventListener('click', createBoxes)
 destroyBtnRef.addEventListener('click', destroyBoxes)
 
-let amount = 0;
+// let amount = 0;
 
 
 function createBoxes(amount) {
@@ -28,6 +28,7 @@ function createBoxes(amount) {
   boxesRef.innerHTML = boxTable.join('');
 }
 
-function destroyBoxes(boxTable) {
+function destroyBoxes() {
   boxesRef.innerHTML = "";
+  amountRef.value = '';
 }

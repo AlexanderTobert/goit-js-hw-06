@@ -14,7 +14,15 @@ const ingredientRef = ingredients.map((ingredient) => {
   liElem.textContent = ingredient;
   liElem.classList.add("item");
   ulRef.appendChild(liElem);
-}/*`<li class="item">${ingredient}</li>`*/).join("");
+}).join("");
+
+/*
+
+шаблонная строка без использования document.createElemen ^^
+
+`<li class="item">${ingredient}</li>`
+
+*/
 
 // ulRef.insertAdjacentHTML("afterbegin", ingredientRef);
 

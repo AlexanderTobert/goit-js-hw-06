@@ -18,8 +18,9 @@ const ulRef = document.querySelector('.gallery');
 const galeryImg = images.reduce((gallery, image) => gallery + `<li class="gallery--item"><img src=${image.url} ${image.alt} /></li>`, '');
 
 
-// const secondGaleryImg = images.map((image) => `<li class="gallery--item"><img src=${image.url} ${image.alt} /></li>`).join("");
-
+/* Альтернативный вариант 
+const secondGaleryImg = images.map((image) => `<li class="gallery--item"><img src=${image.url} ${image.alt} /></li>`).join("");
+*/
 console.log(galeryImg);
 
 ulRef.insertAdjacentHTML("afterbegin", galeryImg);

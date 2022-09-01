@@ -18,7 +18,8 @@ for (let elem of ulRefs) {
     // console.log('Elements:', liRefs.length);
 
     console.log('Category:', h2Refs_El.textContent);
-    console.log('Elements:', liRefs_El.childElementCount);
+    // console.log('Elements:', liRefs_El.childElementCount);
+    console.log('Elements:', liRefs_El.children.length);
   }
 
 // console.log(liRefs);

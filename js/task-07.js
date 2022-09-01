@@ -4,7 +4,6 @@ const spanRef = document.querySelector('#text');
 // console.dir(spanRef);
 
 // spanRef.style.fontSize = inputRef.value + "px";
-
 // inputRef.addEventListener('input', () => {
 //     // console.log(inputRef.value);
 //     spanRef.style.fontSize = inputRef.value + "px";

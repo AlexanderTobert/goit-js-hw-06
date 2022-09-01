@@ -8,7 +8,7 @@ inputRef.addEventListener('blur', () => {
     if (inputRef.value.length === minLength) {
         inputRef.classList.remove("invalid");
         inputRef.classList.add("valid");
-} else {
+    } else {
     inputRef.classList.add("invalid");
     inputRef.classList.remove("valid");
 }

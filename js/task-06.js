@@ -5,7 +5,7 @@ inputRef.addEventListener('blur', () => {
     // console.log(minLength);
     // console.log(inputRef.value.length);
 
-    if (inputRef.value.length >= minLength) {
+    if (inputRef.value.length === minLength) {
         inputRef.classList.remove("invalid");
         inputRef.classList.add("valid");
 } else {

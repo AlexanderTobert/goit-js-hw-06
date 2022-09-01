@@ -14,8 +14,7 @@ const ingredientRef = ingredients.map((ingredient) => {
   liElem.textContent = ingredient;
   liElem.classList.add("item");
   ulRef.appendChild(liElem);
-}
-/*`<li class="item">${ingredient}</li>`*/).join("");
+}/*`<li class="item">${ingredient}</li>`*/).join("");
 
 // ulRef.insertAdjacentHTML("afterbegin", ingredientRef);
 

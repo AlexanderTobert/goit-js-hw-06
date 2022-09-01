@@ -25,7 +25,7 @@ function createBoxes(amount) {
     //document.createElement
   }
   console.log(boxTable);
-  boxesRef.innerHTML = boxTable.join('');
+  boxesRef.insertAdjacentHTML("beforeend", boxTable.join(''));
 }
 
 function destroyBoxes() {
